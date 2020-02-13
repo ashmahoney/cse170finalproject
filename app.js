@@ -13,6 +13,7 @@ var addCourse = require("./routes/addCourse");
 var course = require("./routes/course");
 var team = require("./routes/findTeammates");
 var group = require("./routes/groupPage");
+var add = require('./routes/addComment');
 // Example route
 // var user = require('./routes/user');
 
@@ -45,6 +46,7 @@ app.get("/addCourse", addCourse.viewAddCourse);
 app.get("/course/:courseName", course.view);
 app.get("/findTeammates", team.view);
 app.get("/groupPage/:groupName", group.view);
+app.get('/addComment', add.addComment);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

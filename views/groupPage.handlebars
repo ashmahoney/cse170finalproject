@@ -24,15 +24,68 @@
 
     <!-- Collect the links -->
     <div class="collapse navbar-collapse" id="collapse-1">
-				<ul class="nav navbar-nav">
+				<!--<ul class="nav navbar-nav">
 					{{#each courses}}
                     <li><a href="{{title}}">{{title}}</a></li>
                		 {{/each}}
-				</ul>
+				</ul>-->
 			</div>
 		</nav>
+
+		<h1>{{title}}</h1>
 		
 		<br>
+
+		<h3>Uploaded Work</h3>
+
+		<div class="thumbnail">
+		 	<img src="{{img}}" class="img-responsive img-rounded">
+
+			<p>{{comment}}</p>
+
+			<form id="addCommentForm" role="form" method="get" action="/addComment">
+				<h3>Add a Critique</h3>
+	    		<div class="form-group">
+	      			<label for="comment">Comment:</label>
+	      			<input type="text" class="form-control" id="comment" placeholder="Comment" name="comment">
+	   		 	</div>
+
+				<input type="hidden" name="grouptitle" value="{{title}}">
+				<input type="hidden" name="groupimg" value="{{img}}">
+
+	    		<input type="submit" id="submitBtn" class="btn btn-default" value="Add the comment"></input>
+		</form>
+
+
+
+
+
+		</div>
+
+
+
+		<!--<button type="button" style="background: url({{img}});" data-toggle="modal" data-target="#exampleModal">
+		</button>
+
+Modal 
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="{{img}}" class="img-responsive img-rounded">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
 
     	<!-- Button to find teammates -->
 		<button id="findTeammates" class="btn btn-default btn-md" style="float: right; background-image: #333">+</button>
