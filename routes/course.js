@@ -13,11 +13,11 @@ var group =  [
           "prof": "Scott Klemmer",
           "id": "cogs120",
           "groups": [ 
-              {"name": "Group A",
+              {"name": "GroupA",
               "imageURL": "https://cdn.pixabay.com/photo/2016/01/19/17/53/writing-1149962_1280.jpg"},
-              {"name": "Group B",
+              {"name": "GroupB",
               "imageURL": "https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557399_1280.jpg"},
-              {"name": "Group C",
+              {"name": "GroupC",
               "imageURL": "https://cdn.pixabay.com/photo/2016/02/18/18/57/home-office-1207834_1280.jpg"}
           ]
       },
@@ -26,7 +26,7 @@ var group =  [
           "prof": "Laura Rangel",
           "id": "cogs107b",
           "groups": [ 
-              {"name": "Group D",
+              {"name": "GroupD",
               "imageURL": "https://cdn.pixabay.com/photo/2016/01/19/17/53/writing-1149962_1280.jpg"}
           ]
       },
@@ -35,9 +35,9 @@ var group =  [
           "prof": "Edmund Chang",
           "id": "mmw12",
           "groups": [ 
-              {"name": "Group E",
+              {"name": "GroupE",
               "imageURL": "https://cdn.pixabay.com/photo/2016/01/19/17/53/writing-1149962_1280.jpg"},
-              {"name": "Group F",
+              {"name": "GroupF",
               "imageURL": "https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557399_1280.jpg"}
           ]
       },
@@ -46,9 +46,9 @@ var group =  [
           "prof": "Miles Jones",
           "id": "cse101",
           "groups": [ 
-              {"name": "Group G",
+              {"name": "GroupG",
               "imageURL": "https://cdn.pixabay.com/photo/2016/01/19/17/53/writing-1149962_1280.jpg"},
-              {"name": "Group H",
+              {"name": "GroupH",
               "imageURL": "https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557399_1280.jpg"}
           ]
       }
