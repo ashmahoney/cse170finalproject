@@ -24,7 +24,7 @@
     	<div class="collapse navbar-collapse" style="border-color: #2b669a" id="collapse-1">
     		<ul class="nav navbar-nav">
     			{{#each courses}}
-                    <li><a href="course">{{title}}</a></li>
+                    <li><a href="course/{{title}}">{{title}}</a></li>
                 {{/each}}
             </ul>
         </div>
@@ -32,7 +32,7 @@
 
 	<div class="content container-sm">
 		{{#each courses}}
-			<a href="course">
+			<a href="course/{{title}}">
 				<div class="classes" id="{{id}}">
 					<img src="images/chevron.png" alt="chevron icon" class="chevron"/>
 				  <p class="course_title">{{title}}</p>

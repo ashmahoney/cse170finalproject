@@ -25,11 +25,9 @@
     <!-- Collect the links -->
     <div class="collapse navbar-collapse" id="collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="course">COGS 120</a></li>
-					<li><a href="course">CSE 170</a></li>
-					<li><a href="course">COGS 107B</a></li>
-					<li><a href="course">CSE 101</a></li>
-
+					{{#each courses}}
+                    <li><a href="{{title}}">{{title}}</a></li>
+               		 {{/each}}
 				</ul>
 			</div>
 		</nav>

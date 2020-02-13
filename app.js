@@ -42,7 +42,7 @@ app.get('/', index.view);
 // Example route
 // app.get('/users', user.list);
 app.get("/addCourse", addCourse.viewAddCourse);
-app.get("/course", course.view);
+app.get("/course/:courseName", course.view);
 app.get("/findTeammates", team.view);
 app.get("/groupPage", group.view);
 
