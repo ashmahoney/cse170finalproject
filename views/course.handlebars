@@ -8,12 +8,19 @@
 	<link href="/css/CoursePage.css" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-		
-		<!-- Hamburger menu button -->
 	<nav>
-		<button id="returnHome" class="btn btn-default btn-md" onclick="window.location.href = '/'">Home</button>
+		<button id="goHome" onclick="window.location.href='/homepage'">Home</button>
 	</nav>
+
+    <!-- Collect the links -->
+    <div class="collapse navbar-collapse"  id="collapse-1">
+				<ul class="nav navbar-nav">
+					{{#each courses}}
+                    <li><a href="{{title}}">{{title}}</a></li>
+                	{{/each}}
+				</ul>
+			</div>
+		</nav>
 
 		<h1>{{title}}</h1>
 		
@@ -31,7 +38,7 @@
 
     	<!-- Button to find teammates -->
 		<button id="findTeammates" class="btn btn-default btn-md" style="float: right; background-color: #333">+</button>
-</div>
+	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
