@@ -11,10 +11,17 @@ $(document).ready(function() {
 function initializePage() {
 	console.log("Javascript connected!");
 
-	$("#commentList").load(function() {
+    
+    if ($("#commentList").text() == "[object Object]") {
+        console.log("THIS WORKS");
 
-        console.log("this was triggered");
+        $("#commentList").html("<h5>No Comments To Display</h5>");
 
-    });
+
+
+    }
+
+   /* else {
+        $("#commentList").html()
+    }*/
 }
-
