@@ -4,42 +4,50 @@ var group = [
       {
         "title": "GroupA",
         "img": "https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/iphone-6-wireframe.svg",
-        "comment": ""
+        "comments": [
+          {}]
       },
       {
         "title": "GroupB",
         "img": "",
-        "comment": ""
+        "comments": [
+          {}]
       },
       {
         "title": "GroupC",
         "img": "",
-        "comment": ""
+        "comments": [
+          {}]
       },
       {
         "title": "GroupD",
         "img": "",
-        "comment": ""
+        "comments": [
+          {}]
       },
       {
         "title": "GroupE",
         "img": "",
-        "comment": ""
+        "comments": [
+          {}]
       },
       {
         "title": "GroupF",
         "img": "",
-        "comment": ""
+        "comments": [
+          {}]
       },
       {
         "title": "GroupG",
         "img": "",
-        "comment": ""
+        "comments": [
+          {}]
       },
       {
         "title": "GroupH",
         "img": "",
-        "comment": ""
+        "comments": [
+          {}]
       }
     ]
 

@@ -4,42 +4,50 @@ var group = [
         {
           "title": "GroupA",
           "img": "https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/iphone-6-wireframe.svg",
-          "comment": ""
+          "comments": [
+              {}]
         },
         {
           "title": "GroupB",
           "img": "",
-          "comment": ""
+          "comments": [
+            {}]
         },
         {
           "title": "GroupC",
           "img": "",
-          "comment": ""
+          "comments": [
+            {}]
         },
         {
           "title": "GroupD",
           "img": "",
-          "comment": ""
+          "comments": [
+            {}]
         },
         {
           "title": "GroupE",
           "img": "",
-          "comment": ""
+          "comments": [
+            {}]
         },
         {
           "title": "GroupF",
           "img": "",
-          "comment": ""
+          "comments": [
+            {}]
         },
         {
           "title": "GroupG",
           "img": "",
-          "comment": ""
+          "comments": [
+            {}]
         },
         {
           "title": "GroupH",
           "img": "",
-          "comment": ""
+          "comments": [
+            {}]
         }
       ]
   
@@ -47,23 +55,46 @@ var group = [
   
   ];
 
-exports.addComment = function(request, response) {    
+exports.addComment = function(req, res) {    
 	// Your code goes here
 	// Capture the inputed data
-    var comment = request.query.comment;
-    var groupTitle = request.query.grouptitle;
-    var groupImg = request.query.groupimg;
+    var comment = req.query.comment;
+    var groupTitle = req.query.grouptitle;
+    var groupImg = req.query.groupimg;
 
-	var newComment = {
+	/*var newComment = {
 		"title": groupTitle,
 		"img": groupImg,
 		"comment": comment
-	}
+    }*/
+    
+    for (var i = 0; i < group[0]["groups"].length; i++) {
+        var nameCheck = group[0].groups[i].title;
 
-	console.log(newComment);
+        if (nameCheck == groupTitle) {
+            var counter = group[0].groups[i].comments.length;
+            var counter = counter + 1;
 
-	group[0]["groups"].push(newComment);
+            console.log(counter);
 
-	response.render('groupPage', newComment);
+            group[0].groups[i].comments[counter] = comment;
+
+            console.log(group[0].groups[i].comments[counter]);
+
+            res.render('groupPage', group[0].groups[i]);
+
+
+        }
+
+
+
+
+    }
+
+	//console.log(newComment);
+
+	//group[0]["groups"].push(newComment);
+
+	//response.render('groupPage', newComment);
 
  }
