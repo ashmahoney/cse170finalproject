@@ -1,4 +1,4 @@
-var group = [
+/*var group = [
     {
       "groups": [
         {
@@ -53,7 +53,9 @@ var group = [
   
     }
   
-  ];
+  ];*/
+
+  var addData = require('../Groups.json');
 
 exports.addComment = function(req, res) {    
 	// Your code goes here
@@ -68,20 +70,20 @@ exports.addComment = function(req, res) { 
 		"comment": comment
     }*/
     
-    for (var i = 0; i < group[0]["groups"].length; i++) {
-        var nameCheck = group[0].groups[i].title;
+    for (var i = 0; i < addData["groups"].length; i++) {
+        var nameCheck = addData.groups[i].title;
 
         if (nameCheck == groupTitle) {
-            var counter = group[0].groups[i].comments.length;
+            var counter = addData.groups[i].comments.length;
             var counter = counter + 1;
 
             console.log(counter);
 
-            group[0].groups[i].comments[counter] = comment;
+            addData.groups[i].comments[counter] = comment;
 
-            console.log(group[0].groups[i].comments[counter]);
+            console.log(addData.groups[i].comments[counter]);
 
-            res.render('groupPage', group[0].groups[i]);
+            res.render('groupPage', addData.groups[i]);
 
 
         }
