@@ -22,7 +22,7 @@ function initializePage() {
     }
 
    else {
-       var formatComment = $("#commentList").text().replace(/,/g, ' ');
+       var formatComment = $("#commentList").text().replace(/,/g, ' ').replace('[object Object]', 'Comments: ');
        $("#commentList").text(formatComment);
 
     }
