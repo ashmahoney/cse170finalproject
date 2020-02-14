@@ -13,7 +13,7 @@ function initializePage() {
 
     
     if ($("#commentList").text() == "[object Object]") {
-        console.log("THIS WORKS");
+        console.log("WORKS");
 
         $("#commentList").html("<h5>No Comments To Display</h5>");
 
@@ -21,7 +21,9 @@ function initializePage() {
 
     }
 
-   /* else {
-        $("#commentList").html()
-    }*/
+   else {
+       var formatComment = $("#commentList").text().replace(/,/g, ' ');
+       $("#commentList").text(formatComment);
+
+    }
 }
