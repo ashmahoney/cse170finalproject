@@ -15,6 +15,7 @@ var team = require("./routes/findTeammates");
 var group = require("./routes/groupPage");
 var add = require('./routes/addComment');
 var home = require("./routes/homepage");
+var success = require("./routes/Success");
 // Example route
 // var user = require('./routes/user');
 
@@ -49,6 +50,7 @@ app.get("/findTeammates", team.view);
 app.get("/groupPage/:groupName", group.view);
 app.get('/addComment', add.addComment);
 app.get("/homepage", home.view);
+app.get("/Success", success.viewSuccess);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
