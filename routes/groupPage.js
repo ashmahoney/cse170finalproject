@@ -7,10 +7,10 @@ exports.view = function(req, res){
   var nameToShow = req.params.groupName;
 
   // Display length of JSON array
-  console.log(jsonGroup["groups"].length);
+  console.log(jsonGroup.groups.length);
 
   let pageData;
-  for (var i = 0; i < jsonGroup["groups"].length; i++) {
+  for (var i = 0; i < jsonGroup.groups.length; i++) {
     var nameCheck = jsonGroup.groups[i].title;
 
     // Checking if the URL matches the JSON object title
