@@ -1,3 +1,4 @@
+
 {
     "groups": [
       {
@@ -5,6 +6,8 @@
 		"title": "GroupA",
         "img": "https://66.media.tumblr.com/395c6fb0d6b47890a20c7b6e6e8c914e/tumblr_p5gjesVOjv1w9oylko1_1280.png",
         "comments": [
+          {}],
+        "members": [
           {}]
       },
       {
@@ -12,6 +15,8 @@
         "title": "GroupB",
         "img": "https://media.nngroup.com/media/editor/2018/06/20/basic-storyboard.png",
         "comments": [
+          {}],
+        "members": [
           {}]
       },
       {
@@ -19,6 +24,8 @@
         "title": "GroupC",
         "img": "https://miro.medium.com/max/2060/0*K5476VixXhddhBkA.jpg",
         "comments": [
+          {}],
+        "members": [
           {}]
       },
       {
@@ -26,6 +33,8 @@
         "title": "GroupD",
         "img": "https://emotiv-website-uploads-live.s3.amazonaws.com/uploads/2019/07/cognitive-neuroscience-brain-diagram.jpg",
         "comments": [
+          {}],
+        "members": [
           {}]
       },
       {
@@ -33,6 +42,8 @@
         "title": "GroupE",
         "img": "https://images.examples.com/wp-content/uploads/2018/06/An-Approach-to-African-through-Architecture.jpg",
         "comments": [
+          {}],
+        "members": [
           {}]
       },
       {
@@ -40,6 +51,8 @@
         "title": "GroupF",
         "img": "https://www.geocurrents.info/wp-content/uploads/2015/12/Africa-Customizable-Map-2.png",
         "comments": [
+          {}],
+        "members": [
           {}]
       },
       {
@@ -47,6 +60,8 @@
         "title": "GroupG",
         "img": "https://4.bp.blogspot.com/-riGf3-PMXvQ/T9bmF5ZIF0I/AAAAAAAAAEA/xJor1nt5Ygo/s1600/bcalc.png",
         "comments": [
+          {}],
+        "members": [
           {}]
       },
       {
@@ -54,8 +69,40 @@
         "title": "GroupH",
         "img": "https://www.java-made-easy.com/images/player-turn-21-game.jpg",
         "comments": [
+          {}],
+        "members": [
           {}]
       }
-    ]
+    ],
+  "classmates": [
+    {
+      "name": "Jenny Smith",
+      "pic": "https://images.pexels.com/photos/372042/pexels-photo-372042.jpeg?cs=srgb&dl=adult-beautiful-casual-cute-372042.jpg&fm=jpg"
+    },
+    {
+      "name": "John Ambrose",
+      "pic": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimgix.bustle.com%2Fuploads%2Fimage%2F2020%2F2%2F13%2F741731ad-77b2-4f70-b48e-2c43524ee840-tatb2_unit_07294r.jpg&imgrefurl=https%3A%2F%2Fwww.bustle.com%2Fp%2Fjohn-ambrose-in-ps-i-still-love-you-is-the-marrying-type-says-jordan-fisher-21803018&tbnid=9yTYa55qG8ur7M&vet=12ahUKEwjTxJa0uNnnAhVQYxoKHWGGDekQMygBegUIARDaAQ..i&docid=aGOpsARpW0Wf_M&w=3600&h=2400&q=john%20ambrose&ved=2ahUKEwjTxJa0uNnnAhVQYxoKHWGGDekQMygBegUIARDaAQ"
+    },
+    {
+      "name": "Peter Kavinsky",
+      "pic": "https://www.google.com/imgres?imgurl=https%3A%2F%2Ftownsquare.media%2Fsite%2F252%2Ffiles%2F2018%2F08%2Fto-all-the-boys-Ive-loved-before-peter-kavinsky.jpg%3Fw%3D980%26q%3D75&imgrefurl=https%3A%2F%2Fpopcrush.com%2Fto-all-the-boys-ive-loved-before-tweets-reactions-peter-kavisnky%2F&tbnid=eh3AaqiyWh1J2M&vet=12ahUKEwjDwtXPuNnnAhUK-hoKHRbZBRUQMygNegUIARCeAg..i&docid=e5Spop6gDk5D2M&w=980&h=653&q=peter%20kavinsky&ved=2ahUKEwjDwtXPuNnnAhUK-hoKHRbZBRUQMygNegUIARCeAg"
+    },
+    {
+      "name": "Lara Jean",
+      "pic": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F40%2Fb5%2F7b%2F40b57ba90d8f920c676340e3c4aa2cfd.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.at%2Fpin%2F613263674234773379%2F&tbnid=sQrwT7zmWbmlGM&vet=12ahUKEwiFxI3luNnnAhWygHMKHVmTCyMQMygAegUIARDWAQ..i&docid=O3oMrHbPhc3F1M&w=1080&h=1340&itg=1&q=peter%20kavinsky&hl=en&ved=2ahUKEwiFxI3luNnnAhWygHMKHVmTCyMQMygAegUIARDWAQ"
+    },
+    {
+      "name": "Jane Doe",
+      "pic": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?cs=srgb&dl=women-s-white-and-black-button-up-collared-shirt-774909.jpg&fm=jpg"
+    },
+    {
+      "name": "Amber Deer",
+      "pic": "https://images.pexels.com/photos/324658/pexels-photo-324658.jpeg?cs=srgb&dl=adult-beautiful-blonde-blur-324658.jpg&fm=jpg"
+    },
+    {
+      "name": "Fabio",
+      "pic": "https://images.pexels.com/photos/3444388/pexels-photo-3444388.jpeg?cs=srgb&dl=man-lying-on-a-yellow-and-white-surfboard-3444388.jpg&fm=jpg"
+    }
+  ]
+}
 
-  }

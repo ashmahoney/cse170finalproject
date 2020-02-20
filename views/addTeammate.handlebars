@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Teammate</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/CoursePage.css" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<h2 id="addTeamTitle">Add Teammates</h2>
+		   	
+	</nav>
+
+	<!-- Display all the people in your "course" to add to your group -->
+	{{#each classmates}}
+		<div class="memberContainer">
+			<p id="{{name}}Line"> {{name}} 
+				<button id="addMember" class="btn btn-default btn-md" style="float: right;" onclick="addClassmate({{name}});">Add</button>
+			</p>
+		</div>
+	{{/each}}
+
+	<!-- Button to end adding group members -->
+	<button id="doneAdding" class="btn btn-default btn-md" style="position: absolute; bottom: 20px; right: 10px;">Done</button>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/addTeammate.js"></script>
+</body>
+</html>

@@ -11,19 +11,14 @@ $(document).ready(function() {
 function initializePage() {
 	console.log("Javascript connected!");
 
-    
-    if ($("#commentList").text() == "[object Object]") {
-        console.log("WORKS");
+  if ($("#commentList").text() == "[object Object]") {
+    console.log("WORKS");
+    $("#commentList").html("<h5>No Comments To Display</h5>");
+  }
 
-        $("#commentList").html("<h5>No Comments To Display</h5>");
-
-
-
-    }
-
-   else {
-       var formatComment = $("#commentList").text().replace(/,/g, ' ').replace('[object Object]', 'Comments: ');
-       $("#commentList").text(formatComment);
-
-    }
+  else {
+    var formatComment = $("#commentList").text().replace(/,/g, ' ').replace('[object Object]', 'Comments: ');
+    $("#commentList").text(formatComment);
+  }
+  
 }
